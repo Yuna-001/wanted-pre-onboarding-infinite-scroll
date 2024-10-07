@@ -1,0 +1,20 @@
+.products {
+  display: flex;
+  margin: 6rem 0 0;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.total {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: lightblue;
+}
+
+.loading {
+  margin: 3rem;
+}
