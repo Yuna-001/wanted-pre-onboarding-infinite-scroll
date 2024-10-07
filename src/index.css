@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  border-style: none;
+  outline-style: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
