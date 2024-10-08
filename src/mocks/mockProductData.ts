@@ -718,7 +718,6 @@ interface MockData {
 
 const PER_PAGE = 10;
 
-// 페이지는 1부터 시작함
 export const getMockData = (pageNum: number) => {
   return new Promise((resolve) => {
     setTimeout(() => {
