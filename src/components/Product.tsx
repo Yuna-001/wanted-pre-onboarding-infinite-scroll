@@ -1,5 +1,4 @@
 import { FC } from "react";
-import classes from "./Product.module.css";
 
 interface DataProps {
   productName: string;
@@ -9,7 +8,7 @@ interface DataProps {
 
 const Product: FC<DataProps> = ({ productName, price, boughtDate }) => {
   return (
-    <li className={classes.product}>
+    <li className="product">
       <div>
         <div>{productName}</div>
         <div>{price}</div>

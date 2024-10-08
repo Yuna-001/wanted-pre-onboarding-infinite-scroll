@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef, useCallback, useMemo } from "react";
 import { getMockData } from "./mocks/mockProductData";
-import classes from "./App.module.css";
 import ProductData from "./models/productData";
 import ProductList from "./components/ProductList";
 
@@ -44,12 +43,12 @@ function App() {
 
   return (
     <>
-      <h2 className={classes.total}>Total : ${totalPrice}</h2>
+      <h2 className="total">Total : ${totalPrice}</h2>
       <ProductList products={products} />
       {isLoading ? (
-        <div className={classes.loading}>Loading...</div>
+        <div className="loading">Loading...</div>
       ) : (
-        <button onClick={handleClick} className={classes.loading}>
+        <button onClick={handleClick} className="loading">
           더 불러오기
         </button>
       )}

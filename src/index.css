@@ -17,3 +17,30 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.total {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: lightblue;
+}
+
+.loading {
+  margin: 3rem;
+}
+
+.products {
+  display: flex;
+  margin: 6rem 0 0;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.product {
+  width: 30rem;
+  padding: 20px;
+  border: 2px solid lightblue;
+}
