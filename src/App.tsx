@@ -2,7 +2,7 @@ import { useEffect, useState, useRef, useCallback, useMemo } from "react";
 import { getMockData } from "./mocks/mockProductData";
 import classes from "./App.module.css";
 import ProductData from "./models/productData";
-import Product from "./components/Product";
+import ProductList from "./components/ProductList";
 
 function App() {
   const [page, setPage] = useState<number>(0);
@@ -45,16 +45,7 @@ function App() {
   return (
     <>
       <h2 className={classes.total}>Total : ${totalPrice}</h2>
-      <ul className={classes.products}>
-        {products.map(({ productId, productName, price, boughtDate }) => (
-          <Product
-            key={productId}
-            productName={productName}
-            price={price}
-            boughtDate={boughtDate}
-          />
-        ))}
-      </ul>
+      <ProductList products={products} />
       {isLoading ? (
         <div className={classes.loading}>Loading...</div>
       ) : (
